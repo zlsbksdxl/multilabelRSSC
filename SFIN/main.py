@@ -83,7 +83,7 @@ val_data_loader = DataLoader(test_dataGen,
                              num_workers=8,
                              shuffle=False,
                              pin_memory=False)
-from modelend import SFIN
+from model import SFIN
 model = SFIN(net='resnet18', numclass=17, h=4).cuda()
 EPOCHS = 100
 FOUND_LR = 4e-5
