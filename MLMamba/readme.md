@@ -27,8 +27,7 @@ Multi-label Remote Sensing Scene Classification**'. (TGRS2024)](https://github.c
 
 ## BibTeX
 
-@ARTICLE{10857393,
-
+@ARTICLE{10857393,  
   author={Du, Ruiqi and Tang, Xu and Ma, Jingjing and Zhang, Xiangrong and Jiao, Licheng},
   
   journal={IEEE Transactions on Circuits and Systems for Video Technology}, 
