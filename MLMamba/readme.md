@@ -25,7 +25,7 @@ for train and inference, please refer to our another work['**Semantic-assisted F
 Multi-label Remote Sensing Scene Classification**'. (TGRS2024)](https://github.com/TangXu-Group/multilabelRSSC/edit/main/SFIN/)
 
 
-#BibTeX
+## BibTeX
 
 @ARTICLE{10857393,
   author={Du, Ruiqi and Tang, Xu and Ma, Jingjing and Zhang, Xiangrong and Jiao, Licheng},
