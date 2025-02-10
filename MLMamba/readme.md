@@ -5,7 +5,7 @@ This repository provides the code for the method in our paper '**MLMamba: A Mamb
 
 ![本地路径](mlmamba.png )
 
-**If you have any questions, you can send me an email. My mail address is 24171111300@stu.xidian.edu.cn.**
+**If you have any questions, you can send me an email. My mail address is drq15145136147@gmail.com.**
 
 ## Datasets
 
