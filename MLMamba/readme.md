@@ -4,7 +4,7 @@ This repository provides the code for the method in our paper '**MLMamba: A Mamb
 
 We will update the core code after the Spring Festival holiday.
 
-![本地路径](framework.png )
+![本地路径](mlmamba.png )
 
 **If you have any questions, you can send me an email. My mail address is 24171111300@stu.xidian.edu.cn.**
 
