@@ -2,7 +2,6 @@
 
 This repository provides the code for the method in our paper '**MLMamba: A Mamba-based Efficient Network for Multi-label Remote Sensing Scene Classification**'. (TCSVT2025)
 
-We will update the core code after the Spring Festival holiday.
 
 ![本地路径](mlmamba.png )
 
@@ -24,3 +23,18 @@ We conduct experiments on the UCM-ML, AID-ML, and DFC15-ML datasets. To train an
 
 for train and inference, please refer to our another work['**Semantic-assisted Feature Integration Network for
 Multi-label Remote Sensing Scene Classification**'. (TGRS2024)](https://github.com/TangXu-Group/multilabelRSSC/edit/main/SFIN/)
+
+
+##BibTeX
+
+@ARTICLE{10857393,
+  author={Du, Ruiqi and Tang, Xu and Ma, Jingjing and Zhang, Xiangrong and Jiao, Licheng},
+  journal={IEEE Transactions on Circuits and Systems for Video Technology}, 
+  title={MLMamba: A Mamba-based Efficient Network for Multi-label Remote Sensing Scene Classification}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={1-1},
+  keywords={Semantics;Feature extraction;Visualization;Computational modeling;Marine vehicles;Automobiles;Land surface;Data mining;Circuits and systems;Transformers;Remote sensing scene classification;multi-label;Mamba},
+  doi={10.1109/TCSVT.2025.3535939}}
+
