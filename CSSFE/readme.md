@@ -1,40 +1,29 @@
-# MLMamba
+# CSSFE
 
-This repository provides the code for the method in our paper '**MLMamba: A Mamba-based Efficient Network for Multi-label Remote Sensing Scene Classification**'. (TCSVT2025)
+This repository provides the code for the method in our paper '**Category-Specific Selective Feature Enhancement for Long-Tailed Multi-Label Image Classification**'. (ICCV2025 accept)
 
 
-![本地路径](mlmamba.png )
 
 **If you have any questions, you can send me an email. My mail address is drq15145136147@gmail.com.**
-
-## Datasets
-
-We conduct experiments on the UCM-ML, AID-ML, and DFC15-ML datasets. To train and test our model, you should download the required data set and modify the corresponding parameters in *main.py* to meet your needs.
-
-## Requirements
-
->python 3.7<br>
->torch 1.12.1<br>
->scikit-learn 1.0.2<br>
->numpy<br>
->einops
-
-## Train and inference
-
-for train and inference, please refer to our another work['**Semantic-assisted Feature Integration Network for
-Multi-label Remote Sensing Scene Classification**'. (TGRS2024)](https://github.com/TangXu-Group/multilabelRSSC/edit/main/SFIN/)
+# Abstract
+Since real-world multi-label data often exhibit significant  label imbalance, long-tailed multi-label image classification has emerged as a prominent research area in computer vision. Traditionally, it is considered that deep neural networks’ classifiers are vulnerable to long-tailed distri-butions, whereas the feature extraction backbone remains relatively robust. However, our analysis from the feature learning perspective reveals that the backbone struggles to maintain high sensitivity to sample-scarce categories but retains the ability to localize specific areas effectively. Based
+on this observation, we propose a new model for long-tailed
+multi-label image classification named category-specific selective feature enhancement (CSSFE). First, it utilizes the
+retained localization capability of the backbone to capture
+label-dependent class activation maps. Then, a progressive
+attention enhancement mechanism, updating from head to
+medium to tail categories, is introduced to address the low confidence issue in medium and tail categories. Finally, visual features are extracted according to the optimized class
+activation maps and combined with semantic information
+to perform the classification task. Extensive experiments on
+two benchmark datasets highlight our findings’ generalizability and the proposed CSSFE’s superior performance.
 
 
-## BibTeX
+![本地路径](model.jpg )
+![本地路径](fla.jpg )
 
-@ARTICLE{10857393,  
-  author={Du, Ruiqi and Tang, Xu and Ma, Jingjing and Zhang, Xiangrong and Jiao, Licheng},  
-  journal={IEEE Transactions on Circuits and Systems for Video Technology},   
-  title={MLMamba: A Mamba-based Efficient Network for Multi-label Remote Sensing Scene Classification},    
-  year={2025},  
-  volume={},  
-  number={},  
-  pages={1-1},  
-  keywords={Semantics;Feature extraction;Visualization;Computational modeling;Marine vehicles;Automobiles;Land surface;Data mining;Circuits and systems;Transformers;Remote sensing scene classification;multi-label;Mamba},  
-  doi={10.1109/TCSVT.2025.3535939}}
+
+
+
+
+
 
