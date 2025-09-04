@@ -18,6 +18,7 @@ from torch.utils.data import DataLoader
 import torch.backends.cudnn as cudnn
 from torchvision import models
 from datagen import DataGeneratorML
+from datagen import FlatDataGenerator
 
 import torch.nn.functional as F
 import copy
@@ -62,17 +63,34 @@ test_data_transform = transforms.Compose([
                                                 std = pretrained_stds)
                        ])
 
-datadir = '/media/admin324/000101FC000161AF/multilabeldataset/UC_Merced'
+datadir = '/root/autodl-fs/MLRSnet/Images'
+
 train_dataGen = DataGeneratorML(datadir=datadir,
-                                dataset='UCM',
-                                imgExt='tif',
+                                dataset='AID',
+                                imgExt='jpg',
                                 imgTransform=train_data_transform,
                                 phase='train')
 test_dataGen = DataGeneratorML(datadir=datadir,
-                              dataset='UCM',
-                              imgExt='tif',
+                              dataset='AID',
+                              imgExt='jpg',
                               imgTransform=test_data_transform,
                               phase='test')
+# train_dataGen = FlatDataGenerator(
+#     datadir=datadir,
+#     dataset='UFC',  # 使用新的数据集标识符
+#     imgExt='png',   # UFC15-ML图像扩展名
+#     imgTransform=train_data_transform,
+#     phase='train'
+# )
+
+# test_dataGen = FlatDataGenerator(
+#     datadir=datadir,
+#     dataset='UFC',
+#     imgExt='png',
+#     imgTransform=test_data_transform,
+#     phase='test'
+# )
+
 train_data_loader = DataLoader(train_dataGen,
                                batch_size=32,
                                num_workers=8,
@@ -84,7 +102,7 @@ val_data_loader = DataLoader(test_dataGen,
                              shuffle=False,
                              pin_memory=False)
 from model import SFIN
-model = SFIN(net='resnet18', numclass=17, h=4).cuda()
+model = SFIN(net='resnet18', numclass=61, h=4).cuda()
 EPOCHS = 100
 FOUND_LR = 4e-5
 optimizer = torch.optim.Adam(model.parameters(), lr = FOUND_LR)

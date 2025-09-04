@@ -22,8 +22,10 @@ class SFIN(nn.Module):
         F1 = features[-1]
         F2 = features[-2]
 
-        g1, sf1 = self.lset1(F1)
-        g2, sf2 = self.lset2(F2)
+        # g1, sf1 = self.lset1(F1)
+        # g2, sf2 = self.lset2(F2)
+        g1, sf1, F1_1 = self.lset1(F1)
+        g2, sf2, F2_1 = self.lset2(F2)
         F1_2, F2_2 = self.ciam(F1_1, F2_1)
         # F1_2, F2_2 = F1, F2
 
